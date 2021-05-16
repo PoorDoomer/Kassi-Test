@@ -1,0 +1,46 @@
+#myLogo.fade-in-image {
+    animation: fadeIn 5s ease-in-out; 
+    -webkit-animation: fadeIn 5s ease-in-out;
+    -moz-animation: fadeIn 5s ease-in-out;
+    -o-animation: fadeIn 5s ease-in-out;
+    -ms-animation: fadeIn 5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+#myLogo{
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1sec ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#myLogo.fade{
+  opacity:0;
+}
+.myLogo img{
+    float:center;
+    width: auto;
+    height: auto;
+}

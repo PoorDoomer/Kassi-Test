@@ -1,0 +1,28 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <link rel="stylesheet" herf="home.css">
+			<div class="myLogo">
+				<img id="myLogo" src="kassi.jpg">
+              </div>
+    </head>
+    <body style="background-color:#181703;">
+        <script type="text/javascript" src="home.js"></script>
+        <script>
+        var test=document.getElementById("myLogo");
+
+        test.style.opacity=0;
+
+            sleep(0).then(() => {
+    //dir li bghiti hna
+    kern(test);
+    console.log("deux seconde est passée");
+  });  
+  sleep(3000).then(() => {
+    //dir li bghiti hna
+    fade(test);
+    console.log("une seconde est passée");
+  });
+        </script>
+    </body>
+</html>
