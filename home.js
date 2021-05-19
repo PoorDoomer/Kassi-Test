@@ -29,7 +29,6 @@ function kern(element) {
 }
 
 
-
 //fonction permettant de n3ess pendant wa7d delta T
 function sleep(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
