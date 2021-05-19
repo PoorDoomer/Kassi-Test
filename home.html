@@ -4,9 +4,20 @@
         <link rel="stylesheet" herf="home.css">
 			<div class="myLogo">
 				<img id="myLogo" src="kassi.jpg">
-              </div>
+      </div>
     </head>
     <body style="background-color:#181703;">
+        <div class="théLogo">
+          <a href="the.html">
+            <img id="théLogo" src="thé.png">
+          </a>
+          
+        </div>
+        <div class="caféLogo">
+          <a href="cafe.html">
+            <img id="caféLogo" src="café.png">
+          </a>
+        </div>
         <script type="text/javascript" src="home.js"></script>
         <script>
         var test=document.getElementById("myLogo");
@@ -24,5 +35,28 @@
     console.log("une seconde est passée");
   });
         </script>
+        <script>
+          var testa=document.getElementById("théLogo");
+  
+          testa.style.opacity=0;
+  
+              sleep(5000).then(() => {
+      //dir li bghiti hna
+      kern(testa);
+      console.log("deux seconde est passée");
+    });  
+          </script>
+          <script>
+          var testo=document.getElementById("caféLogo");
+            
+                    testo.style.opacity=0;
+            
+                        sleep(5000).then(() => {
+                //dir li bghiti hna
+                kern(testo);
+                console.log("deux seconde est passée");
+              });  
+                    </script>
+          
     </body>
 </html>

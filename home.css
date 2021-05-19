@@ -44,3 +44,11 @@
     width: auto;
     height: auto;
 }
+.caféLogo img{
+  float: left;
+  align-self: center;
+}
+.théLogo img{
+  float: right;
+  align-self: center;
+}
