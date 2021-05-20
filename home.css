@@ -46,9 +46,68 @@
 }
 .caféLogo img{
   float: left;
-  align-self: center;
+  box-align: left;
 }
 .théLogo img{
   float: right;
-  align-self: center;
+  box-align: right;
+}
+#number{
+  width: 3;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 50%, 14%);
+  height: 100vh
+}
+.block{
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: 100% auto;
+  background: url("thé.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.glow::before, .glow::after{
+  content: "";
+  position:absolute;
+  left: -2px;
+  right: -2px;
+  background: linearGradient(
+    -45deg,
+    #00ff66,
+    #00ffff,
+    #ff00ff,
+    #ff0099,
+    #099fff,
+  );
+  background-size: 400%;
+  height: calc(100% + 5px);
+  width: calc(100% +5px);
+  z-index: -1;
+  animation: change 40s linear infinite;
+}
+@keyframes change{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+.glow ::after{
+  filter: blur(40px);
+  opacity: .5;
+}
+img#théLogo{
+
+  animation-name: change;
 }
