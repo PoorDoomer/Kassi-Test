@@ -69,7 +69,7 @@ body {
   width: 50%;
   height: auto;
   margin: 100% auto;
-  background: url("thé.png");
+  background: url(./thé.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

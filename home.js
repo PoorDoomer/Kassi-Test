@@ -31,3 +31,13 @@ function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
   }
 
+
+
+  var playing = true;
+  function loop(){
+      if(playing){
+        $('.images img:eq(1)').fadeIn(700, function(){
+          $(this).fadeOut(700,loop);
+        });
+      }
+    }
