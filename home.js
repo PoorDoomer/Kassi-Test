@@ -32,7 +32,7 @@ function sleep (time) {
   }
 
 
-
+// incremente mais pas au dessus de 10
   function incrementValue()
   {
       var value = parseInt(document.getElementById('number').value, 10);
@@ -40,8 +40,11 @@ function sleep (time) {
       value = isNaN(value) ? 0 : value;
       value++;
       document.getElementById('number').value = value;
+      console.log("un sucre en plus");
+
   }
 }
+// decrement mais pas en dessous de 0
   function decrementValue()
   {
       var value = parseInt(document.getElementById('number').value, 10);
@@ -49,11 +52,14 @@ function sleep (time) {
            value = isNaN(value) ? 0 : value;
             value--;
             document.getElementById('number').value = value;
+            console.log("un sucre en moins");
+
       }
      
   }
 
 var i = 0;
+//augmente la longueur d'une certaine couleur a un certain interval
 function move() {
   if (i == 0) {
     i = 1;

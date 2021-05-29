@@ -3,7 +3,9 @@
     <head>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <link rel="stylesheet" herf="home.css">
+        <!-- style permetant de mettre le glow sur les images café et thé-->
         <style>
+        
           .GFG{
             
               width:260px ;
@@ -15,20 +17,8 @@
               background: greenyellow; 
               box-shadow: 0 0 100px blueviolet; 
           }
-          .GFGb{
-            
-            width:260px ;
-            height:260px;
-            border-radius: 10%;
-        }
-        .GFGb:hover{
-            color: #111; 
-            background: blueviolet; 
-            box-shadow: 0 0 100px greenyellow; 
-        }
-    
           </style>
-
+    <!-- thexte simple centré-->
       <h1 style="color: white;text-align: center; top: 60%;" id="text">Veuillez choisir le nombre de sucre</h1>
 			<div class="myLogo">
 				<img id="myLogo" src="kassi.jpg">
@@ -50,8 +40,8 @@
 
         <script type="text/javascript" src="home.js"></script>
     
-    
-    
+  
+    <!-- style permettant de de recentrer les cases plus moins et l'affchage du nombre-->
     <style>
         .centered-number {
   position: absolute; 
@@ -75,14 +65,18 @@
   left: 800px;
   bottom: 50%;
   width: 100px;
-}
+} 
     </style>
-    <form>
-        <input type="text" id="number" value="0"  class="centered-number"        />
-        <input type="image" id="plus" onclick="incrementValue();return false;" value="Increment Value" img src="plus+.png" class="centered-plus" class="GFGb"/>
-        <input type="image" id="minus" onclick="decrementValue();return false;" value="decrement Value" img src="moins.jpg" class="centered-minus" class="GFGb"/>
-     </form>
 
+    <!-- texte et image sous forme de bouton (image imput) 
+    readonly pour ne pas modifier la case manuellement sur le site
+    return false permet de ne pas redémarrer la page a chaque click-->
+    <form>
+        <input type="text" id="number" value="0" readonly class="centered-number"        />
+        <input type="image" id="plus" onclick="incrementValue() ;return false;" value="Increment Value" img src="plus_new.png" class="centered-plus" class="GFGb"/>
+        <input type="image" id="minus" onclick="decrementValue();return false;" value="decrement Value" img src="moins.png" class="centered-minus" class="GFGb"/>
+     </form>
+      <!-- utilisation de la fonction imageClick-->
      <script>
         var i = 0;
         function imageClick() {
@@ -98,14 +92,13 @@
         test.style.opacity=0;
 
             sleep(0).then(() => {
-    //dir li bghiti hna
     kern(test);
     console.log("deux seconde est passée");
   });  
   sleep(3000).then(() => {
     //dir li bghiti hna
     fade(test);
-    console.log("une seconde est passée");
+    console.log("trois seconde sont passée");
   });
         </script>
 
@@ -118,7 +111,7 @@
               sleep(5000).then(() => {
       //dir li bghiti hna
       kern(testa);
-      console.log("deux seconde est passée");
+      console.log("5  seconde sont passée");
     });  
           </script>
 
@@ -131,7 +124,7 @@
                         sleep(5000).then(() => {
                 //dir li bghiti hna
                 kern(testo);
-                console.log("deux seconde est passée");
+                console.log("5 seconde sont passée");
               });  
                     </script>
 
@@ -143,7 +136,7 @@
                 sleep(6300).then(() => {
         //dir li bghiti hna
         kern(testn);
-        console.log("deux seconde est passée");
+        console.log("6.3 secondes sont passée");
       });  
             </script>
   
@@ -155,7 +148,7 @@
                   sleep(6300).then(() => {
           //dir li bghiti hna
           kern(testp);
-          console.log("deux seconde est passée");
+          console.log("6.3 secondes sont passée");
         });  
               </script>
   
@@ -167,7 +160,7 @@
                   sleep(6300).then(() => {
           //dir li bghiti hna
           kern(testm);
-          console.log("deux seconde est passée");
+          console.log("6.3 secondes sont passée");
         });  
               </script>*
   <script>
@@ -178,7 +171,7 @@
                   sleep(5600).then(() => {
           //dir li bghiti hna
           kern(testt);
-          console.log("deux seconde est passée");
+          console.log("5.6 secondes sont passée");
         });  
               </script>
           

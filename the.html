@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <h1 style="color: white;text-align: center; top: 60%;" id="text">Le thé est en cours de préparation</h1>
-
+<!-- maximum du progress et le début de la barre avec un width de 1% le width vas s'incrémenter pas la suite 
+ce qui vas permetre de faire une progress bar-->
 <style>
 #myProgress {
   width: 100%;
@@ -16,13 +17,14 @@
   top:50%;
 }
 </style>
+<!-- onload veut dire que la fonction est appellée directement lorsque la page se load-->
 <body onload="move()" style="background-color:#181703;">
     >
 <div id="myProgress">
   <div id="myBar"></div>
 </div>
 
-
+<!-- fonction move sur mybar ce qui augmente le width-->
 <script>
 var i = 0;
 function move() {
@@ -48,6 +50,8 @@ setTimeout(function() {
 }, 7000);
 
 </script>
+<!-- le set time out permet de revenir a la page home après 7 secondes d'attente, ça a été pensé 
+pour attendre la fin du chargement tout en gardant un mouvement fluide de la barre-->
 
 </body>
 </html>
