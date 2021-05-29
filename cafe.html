@@ -1,7 +1,50 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" herf="home.css">
-    </head>
-        <body style="background-color:#181703;">
-            </body>
-            </html>
+  <h1 style="color: white;text-align: center; top: 60%;" id="text">Le café est en cours de préparation</h1>
+
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #6f4e37;
+}
+</style>
+<body onload="move()" style="background-color:#181703;">
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+
+
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 60);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        
+      }
+    }
+  }  
+}
+setTimeout(function() {
+  window.location.href = "home.html";
+}, 7000);
+
+</script>
+
+</body>
+</html>

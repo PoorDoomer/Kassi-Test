@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+    <script type="text/javascript" src="home.js"></script>
+    <style>
+        .centered-number {
+  position: absolute; 
+  top: 55%;
+  left: 600px;
+  bottom: 45%;
+  width: 190px;
+  height: 50px
+  
+}
+.centered-minus {
+  position: absolute; 
+  top: 50%;
+  left: 500px;
+  bottom: 50%;
+  width: 100px;
+}
+.centered-plus {
+  position: absolute; 
+  top: 50%;
+  left: 800px;
+  bottom: 50%;
+  width: 100px;
+}
+    </style>
+    <form>
+        <input type="text" id="number" value="0"  class="centered-number"        />
+        <input type="image" onclick="incrementValue();return false;" value="Increment Value" img src="plus+.png" class="centered-plus"/>
+        <input type="image" onclick="decrementValue();return false;" value="decrement Value" img src="moins.jpg" class="centered-minus"/>
+     </form>
+
+     <script>
+        var i = 0;
+        function imageClick() {
+            document.getElementById('inc').value = i;
+        }
+    </script>
+</html>

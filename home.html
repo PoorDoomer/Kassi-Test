@@ -1,89 +1,186 @@
 <!DOCTYPE html>>
 <html>
-
-<head>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  
-  <style>
-  
-    .GFG{
-      
-        width:260px ;
-        height:260px;
-        margin-left: 550px;
-        border-radius: 10%;
-    }
-    .GFG:hover{
-        color: #111; 
-        background: greenyellow; 
-        box-shadow: 0 0 100px blueviolet; 
-    }
-
-    </style>
-
-
-
-
-</head>
-
-<body style="background-color:#181703;">
-  <div class="myLogo">
-    <img id="myLogo" src="kassi.jpg">
-  </div>
-
-
-    <a href="the.html">
-      <img id="théLogo" src="thé.png" align=right class="GFG" />
-    </a>
-
-
-  <a href="cafe.html" class=images>
-    <img id="caféLogo" src="café.png"  align=left  class="GFG"/>
-  </a>
-
-
-  <script type="text/javascript" src="home.js"></script>
-
-
-  <script>
-    var test = document.getElementById("myLogo");
-
-    test.style.opacity = 0;
-
-    sleep(0).then(() => {
-      //dir li bghiti hna
-      kern(test);
-      console.log("deux seconde est passée");
-    });
-    sleep(3000).then(() => {
-      //dir li bghiti hna
-      fade(test);
-      console.log("une seconde est passée");
-    });
-  </script>
-
-  <script>
- 
-
-    var testa = document.getElementById("théLogo");
-
-    testa.style.opacity = 0;
-    var testo = document.getElementById("caféLogo");
-    testo.style.opacity = 0;
-  
-    sleep(5000).then(() => {
-      //dir li bghiti hna
+    <head>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" herf="home.css">
+        <style>
+          .GFG{
+            
+              width:260px ;
+              height:260px;
+              border-radius: 10%;
+          }
+          .GFG:hover{
+              color: #111; 
+              background: greenyellow; 
+              box-shadow: 0 0 100px blueviolet; 
+          }
+          .GFGb{
+            
+            width:260px ;
+            height:260px;
+            border-radius: 10%;
+        }
+        .GFGb:hover{
+            color: #111; 
+            background: blueviolet; 
+            box-shadow: 0 0 100px greenyellow; 
+        }
     
-      kern(testo);
+          </style>
+
+      <h1 style="color: white;text-align: center; top: 60%;" id="text">Veuillez choisir le nombre de sucre</h1>
+			<div class="myLogo">
+				<img id="myLogo" src="kassi.jpg">
+      </div>
+    </head>
+    <body style="background-color:#181703;">
+        <div class="théLogo">
+          <a href="the.html">
+            <img id="théLogo" src="thé.png" align=right class="GFG"> 
+          </a>
+          
+        </div>
+        <div class="caféLogo">
+          <a href="cafe.html">
+            <img id="caféLogo" src="café.png" align=left class="GFG">
+          </a>
+        </div>
+
+
+        <script type="text/javascript" src="home.js"></script>
+    
+    
+    
+    <style>
+        .centered-number {
+  position: absolute; 
+  top: 55%;
+  left: 600px;
+  bottom: 45%;
+  width: 192px;
+  height: 50px
+  
+}
+.centered-minus {
+  position: absolute; 
+  top: 50%;
+  left: 500px;
+  bottom: 50%;
+  width: 100px;
+}
+.centered-plus {
+  position: absolute; 
+  top: 50%;
+  left: 800px;
+  bottom: 50%;
+  width: 100px;
+}
+    </style>
+    <form>
+        <input type="text" id="number" value="0"  class="centered-number"        />
+        <input type="image" id="plus" onclick="incrementValue();return false;" value="Increment Value" img src="plus+.png" class="centered-plus" class="GFGb"/>
+        <input type="image" id="minus" onclick="decrementValue();return false;" value="decrement Value" img src="moins.jpg" class="centered-minus" class="GFGb"/>
+     </form>
+
+     <script>
+        var i = 0;
+        function imageClick() {
+            document.getElementById('inc').value = i;
+        }
+    </script>
+
+
+        <script type="text/javascript" src="home.js"></script>
+        <script>
+        var test=document.getElementById("myLogo");
+
+        test.style.opacity=0;
+
+            sleep(0).then(() => {
+    //dir li bghiti hna
+    kern(test);
+    console.log("deux seconde est passée");
+  });  
+  sleep(3000).then(() => {
+    //dir li bghiti hna
+    fade(test);
+    console.log("une seconde est passée");
+  });
+        </script>
+
+
+        <script>
+          var testa=document.getElementById("théLogo");
+  
+          testa.style.opacity=0;
+  
+              sleep(5000).then(() => {
+      //dir li bghiti hna
       kern(testa);
-      loop();
       console.log("deux seconde est passée");
-    });
-  </script>
- 
+    });  
+          </script>
 
+          
+          <script>
+          var testo=document.getElementById("caféLogo");
+            
+                    testo.style.opacity=0;
+            
+                        sleep(5000).then(() => {
+                //dir li bghiti hna
+                kern(testo);
+                console.log("deux seconde est passée");
+              });  
+                    </script>
 
-
-</body>
-
+<script>
+  var testn=document.getElementById("number");
+    
+            testn.style.opacity=0;
+    
+                sleep(6300).then(() => {
+        //dir li bghiti hna
+        kern(testn);
+        console.log("deux seconde est passée");
+      });  
+            </script>
+  
+  <script>
+    var testp=document.getElementById("plus");
+      
+              testp.style.opacity=0;
+      
+                  sleep(6300).then(() => {
+          //dir li bghiti hna
+          kern(testp);
+          console.log("deux seconde est passée");
+        });  
+              </script>
+  
+  <script>
+    var testm=document.getElementById("minus");
+      
+              testm.style.opacity=0;
+      
+                  sleep(6300).then(() => {
+          //dir li bghiti hna
+          kern(testm);
+          console.log("deux seconde est passée");
+        });  
+              </script>*
+  <script>
+    var testt=document.getElementById("text");
+      
+              testt.style.opacity=0;
+      
+                  sleep(5600).then(() => {
+          //dir li bghiti hna
+          kern(testt);
+          console.log("deux seconde est passée");
+        });  
+              </script>
+          
+    </body>
 </html>
